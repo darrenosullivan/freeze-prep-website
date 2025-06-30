@@ -9,15 +9,22 @@
 <body>
 
   <header>
-    <nav class="navbar">
-      <div class="logo">FreezePrep</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="logo">FreezePrep</div>
+
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776; <!-- Unicode hamburger icon -->
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <main>
     <section id="home" class="hero">
@@ -51,6 +58,14 @@
   <footer>
     <p>&copy; 2025 FreezePrep. All rights reserved.</p>
   </footer>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
 
 </body>
 </html>

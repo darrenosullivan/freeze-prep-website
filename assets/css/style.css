@@ -170,4 +170,34 @@ footer {
   }
 }
 
+/* Hamburger icon hidden by default */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsive styles for hamburger menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #ADD8E6; /* match navbar color */
+    position: absolute;
+    top: 60px; /* below the navbar */
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
 
