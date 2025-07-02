@@ -55,18 +55,8 @@ body {
   background-color: #ADD8E6; /* your brand blue */
 }
 
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
-  padding: 4rem;
-  background-color: #ADD8E6; /* primary light blue */
-  flex-wrap: wrap; /* makes it responsive: stacks on smaller screens */
-}
-
 .hero-text {
-  max-width: 600px; /* increased for better line length */
+  max-width: 500px;
 }
 
 .hero h1 {
@@ -76,32 +66,28 @@ body {
 
 .hero p {
   font-size: 1.3rem;
-  max-width: 600px; /* match hero-text width */
+  max-width: 400px;
   margin-bottom: 2rem;
 }
 
 .hero-image {
   max-width: 500px;
   width: 100%;
-  border-radius: 10px; /* keep the nice soft corners */
-  object-fit: contain; /* ensures good aspect ratio if you resize */
+  border-radius: 10px; /* optional: soften corners */
 }
 
 /* Call-to-action button */
 .cta-button {
   background-color: #A8D5BA; /* fresh green accent */
   color: #333333;
-  font-size: 1.2rem; /* slightly bigger for better CTA */
-  padding: 1rem 2.5rem; /* wider button for visual balance */
+  padding: 1rem 2rem;
   text-decoration: none;
-  border-radius: 8px; /* smoother, modern corner radius */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle depth */
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: #8cbf9e; /* slightly darker green on hover */
-  transform: translateY(-2px); /* adds a subtle lift on hover */
 }
 
 /* How It Works section */
@@ -197,7 +183,7 @@ footer {
     display: none;
     flex-direction: column;
     gap: 1rem;
-    background-color: #ADD8E6; /* match navbar color */
+    background-color: #B9D3EB; /* slightly lighter navbar color */
     position: absolute;
     top: 60px; /* below the navbar */
     right: 0;
