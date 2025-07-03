@@ -52,7 +52,7 @@ body {
   justify-content: space-between;
   padding: 4rem;
   gap: 2rem;
-  background-color: #ADD8E6; /* your brand blue */
+  background-color: #ADD8E6; /* brand blue */
 }
 
 .hero-text {
@@ -73,12 +73,12 @@ body {
 .hero-image {
   max-width: 500px;
   width: 100%;
-  border-radius: 10px; /* optional: soften corners */
+  border-radius: 10px; /* soften corners */
 }
 
 /* Call-to-action button */
 .cta-button {
-  background-color: #A8D5BA; /* fresh green accent */
+  background-color: #A8D5BA; /* fresh green */
   color: #333333;
   padding: 1rem 2rem;
   text-decoration: none;
@@ -116,7 +116,7 @@ body {
 /* About section */
 .about {
   padding: 4rem 2rem;
-  background-color: #F9FAFB; /* off-white for a clean finish */
+  background-color: #F9FAFB; /* off-white */
   text-align: center;
 }
 
@@ -133,7 +133,7 @@ body {
 
 /* Footer */
 footer {
-  background-color: #ADD8E6; /* match primary color for cohesion */
+  background-color: #ADD8E6; /* match primary color */
   color: #333333;
   text-align: center;
   padding: 1rem 2rem;
@@ -177,7 +177,7 @@ footer {
   cursor: pointer;
 }
 
-/* Responsive styles for hamburger menu */
+/* Responsive style for hamburger menu */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -200,4 +200,16 @@ footer {
     display: block;
   }
 }
+/* How It Works step images */
+.how-it-works li {
+  margin-bottom: 2rem; /* breathing room */
+}
 
+.how-it-works .step-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto 0;       /* centered, with top margin */
+  border-radius: 8px;        /* soft corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
