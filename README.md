@@ -39,13 +39,13 @@ I designed FreezePrep as a single-page scrolling website with clear visual hiera
 
 ## Deployment  
 The site is deployed on GitHub Pages at:  
-[https://yourusername.github.io/freezeprep](https://darrenosullivan.github.io/freezeprep)  
-
-
+[https://darrenosullivan.github.io/freeze-prep-website/]
 
 ## Credits  
 - Product inspiration: SuperCubes (USA)  
 - Hamburger menu icon: Unicode character  
 - Colour palette sourced from Coolors.co  
 - Fonts: System default sans-serif  
+- Wireframes made using Basamiq Wireferames
+- Favicon.io for favicon images and code
 - Thanks to the Code Institute for guidance and learning resources.
