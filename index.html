@@ -1,10 +1,25 @@
 <!DOCTYPE html>
+<!--
+  index.html – FreezePrep Single-Page Site
+  Author: Darren O’Sullivan
+  Created: July 2025
+  Notes:
+    • Overall structure inspired by SouperCubes.com
+    • Responsive menu pattern adapted from CSS-Tricks
+    • Favicon batch generated via favicon.io
+-->
+
 <html lang="en">
 <head>
+     <!-- Character encoding & mobile scaling -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Page title and icons -->
   <title>Freeze Prep – Master Your Meal Prep</title>
-   <link rel="apple-touch-icon" sizes="180x180" /* Favicon for site */
+
+   <!-- Favicons (from favicon.io) -->
+   <link rel="apple-touch-icon" sizes="180x180"
       href="assets/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32"
       href="assets/images/favicon-32x32.png">
@@ -12,15 +27,23 @@
       href="assets/images/favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#ADD8E6">
+
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
 
+      <!--============================================================================
+    HEADER & NAVIGATION
+    • Sticky flex nav with logo + hamburger for mobile
+    • Pattern adapted from CSS-Tricks Responsive Menu
+  =============================================================================-->
   <header>
   <nav class="navbar">
+     <!-- Site branding -->
     <div class="logo">FreezePrep</div>
 
-    <!-- Hamburger icon -->
+    <!-- Hamburger icon (mobile only) -->
     <div class="hamburger" onclick="toggleMenu()">
       &#9776; <!-- Unicode hamburger icon -->
     </div>
@@ -33,6 +56,11 @@
   </nav>
 </header>
 
+    <!--============================================================================
+      HERO SECTION
+      • Two-column flex: text + branded image
+      • Layout inspired by SouperCubes hero layout
+    =============================================================================-->
 
   <main>
     <section id="home" class="hero">
@@ -44,7 +72,11 @@
   <img src="assets/images/hero-freezeprep.png" alt="FreezePrep Silicone Tray" class="hero-image">
 </section>
 
-    <!-- How It Works Section -->
+ <!--============================================================================
+      HOW IT WORKS
+      • Numbered steps with supporting images
+      • Step images courtesy of Tiny Boards, Simply Recipes, and Lee Valley Tools websites and articles (assets/images/stepX.png)
+    =============================================================================-->
   <section id="how-it-works" class="how-it-works">
   <h2>How It Works</h2>
   <ol>
@@ -67,7 +99,12 @@
   <a href="#about" class="cta-button">Learn About FreezePrep</a>
 </section>
 
-    <!-- About Section -->
+      <!--============================================================================
+      ABOUT SECTION
+      • Personal brand story
+        • Why I created FreezePrep and reflecting user stories
+        • Emphasising convenience, variety, and sustainability
+    =============================================================================-->
     <section id="about" class="about">
   <h2>About FreezePrep</h2>
   <p>I created FreezePrep because I was tired of meal prep promising to save time but instead leaving me bored and uninspired. Cooking a giant batch of chicken and rice meant choking down the same bland meal with the same tired sauce for days—and by midweek, I dreaded lunchtime.</p>
@@ -76,11 +113,17 @@
   <p>FreezePrep was designed for busy people who want healthy meals, more variety, and an easier way to stay on track—because meal prep should work for you, not the other way around.</p>
 </section>
   </main>
-
+  <!--============================================================================
+    FOOTER
+  =============================================================================-->
   <footer>
     <p>&copy; 2025 FreezePrep. All rights reserved.</p>
   </footer>
-
+  <!--============================================================================
+    MOBILE NAVIGATION SCRIPT
+    • Simple toggle for .nav-links.active
+    • Inspired by CSS-Tricks “Responsive Toggle Menu”
+  =============================================================================-->
 <script>
   function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
