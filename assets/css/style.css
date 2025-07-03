@@ -74,6 +74,7 @@ body {
   max-width: 500px;
   width: 100%;
   border-radius: 10px; /* soften corners */
+  
 }
 
 /* Call-to-action button */
@@ -212,4 +213,16 @@ footer {
   margin: 1rem auto 0;       /* centered, with top margin */
   border-radius: 8px;        /* soft corners */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+@media (min-width: 1024px) {
+  .hero {
+    gap: 4rem;
+  }
+  .hero-text {
+    max-width: 40%;     /* tighten text column */
+  }
+  .hero-image {
+    width: 55%;         /* let image fill more space */
+    max-width: none;    /* remove 500px cap */
+  }
 }
