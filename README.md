@@ -29,7 +29,7 @@ I chose this project to explore building a brand around a product in a niche Iâ€
 - JavaScript for toggling the hamburger menu interaction.
 
 ## UX Design  
-I designed FreezePrep as a single-page scrolling website with clear visual hierarchy and distinct content sections to guide the user naturally through the product story. The colour palette uses soft blues and greens to evoke freshness and health. Wireframes and mockups were created prior to coding to plan layout and responsiveness (see `/assets/wireframes/` folder for images).
+I designed FreezePrep as a single-page scrolling website with clear visual layout and content sections to guide the user naturally through the product story. The colour palette uses soft blues and greens to evoke freshness and health. Wireframes and mockups were created prior to coding to plan layout using Balsamiq (see `/assets/wireframes/` folder for images).
 
 ## Testing  
 - Manually tested responsiveness on desktop, tablet, and mobile using browser developer tools.  
@@ -43,7 +43,9 @@ The site is deployed on GitHub Pages at:
 
 ## Credits  
 - Product inspiration: SuperCubes (USA)  
-- Hamburger menu icon: Unicode character  
+- Hamburger menu icon: Unicode character 
+- MDN's Felxbox for CSS layout
+- CSS-Tricks used for responsive navigation 
 - Colour palette sourced from Coolors.co  
 - Fonts: System default sans-serif  
 - Wireframes made using Basamiq Wireferames
